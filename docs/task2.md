@@ -1,6 +1,6 @@
 # Кастомизация статического сайта (шаблонизация, сборка статики: HTML, CSS, JS)
 
-## [Структура проекта](repo_url/)
+## [Структура проекта](https://repo_url/)
 
 ```
 pyweb2025-mkdocs/
@@ -19,7 +19,7 @@ pyweb2025-mkdocs/
 └── site/ (генерируется)
 ```
 
-## Конфигурация MkDocs [mkdocs.yml](repo_url/blob/main/mkdocs.yml)
+## Конфигурация MkDocs [mkdocs.yml](https://repo_url/blob/main/mkdocs.yml)
 
 
 ```yaml
@@ -44,7 +44,7 @@ markdown_extensions:
   - admonition
 ```
 
-## Frontend Build Configuration [package.json](repo_url/blob/main/package.json)
+## Frontend Build Configuration [package.json](https://repo_url/blob/main/package.json)
 
 
 ```json
@@ -68,7 +68,7 @@ markdown_extensions:
 }
 ```
 
-## CI/CD Pipeline [.github/workflows/deploy.yml](repo_url/blob/main/.github/workflows/mkdocs.yml)
+## CI/CD Pipeline [.github/workflows/deploy.yml](https://repo_url/blob/main/.github/workflows/mkdocs.yml)
 
 
 ```yaml
