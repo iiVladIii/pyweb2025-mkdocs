@@ -1,8 +1,7 @@
 site_name: pyweb2025
 site_description: Задания по курсу pyweb2025
 site_author: Владислав Филимонов
-site_url: https://github.com/iiVladIii/pyweb2025-mkdocs
-repo_url: https://github.com/iiVladIii/pyweb2025-mkdocs
+site_url: https://iivladiii.github.io/pyweb2025-mkdocs/
 
 theme:
   name: null
@@ -17,3 +16,6 @@ markdown_extensions:
       permalink: false
   - codehilite
   - admonition
+
+extra:
+  repo_url: https://github.com/iiVladIii/pyweb2025-mkdocs
