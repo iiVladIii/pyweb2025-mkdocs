@@ -1,1 +1,19 @@
-site_name: pyweb2025 mkdocs site
+site_name: pyweb2025
+site_description: Задания по курсу pyweb2025
+site_author: Владислав Филимонов
+site_url: https://github.com/iiVladIii/pyweb2025-mkdocs
+repo_url: https://github.com/iiVladIii/pyweb2025-mkdocs
+
+theme:
+  name: null
+  custom_dir: custom_theme
+
+nav:
+  - Задание 1: index.md
+  - Задание 2: task2.md
+
+markdown_extensions:
+  - toc:
+      permalink: false
+  - codehilite
+  - admonition

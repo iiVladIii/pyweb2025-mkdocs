@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <meta name="description" content="{% if page.meta.description %}{{ page.meta.description }}{% else %}{{ config.site_description }}{% endif %}">
+    <meta name="author" content="{{ config.site_author }}">
+
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}">
+    <meta property="og:description" content="{% if page.meta.description %}{{ page.meta.description }}{% else %}{{ config.site_description }}{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ config.site_url }}">
+
+    <link rel="canonical" href="{{ page.canonical_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/styles.min.css' | url }}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="{{ config.site_url }}" class="site-logo">
+                    <h1>{{ config.site_name }}</h1>
+                </a>
+                <nav class="main-nav">
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        {% for nav_item in nav %}
+                            <li class="nav-item">
+                                <a href="{{ nav_item.url | url }}" class="nav-link{% if nav_item.active %} active{% endif %}">
+                                    {{ nav_item.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            {% if page.title %}
+                <h1 class="page-title">{{ page.title }}</h1>
+            {% endif %}
+            <div class="content">
+                {{ page.content }}
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info"></div>
+                <div class="footer-links">
+                    <a href="{{ config.repo_url }}" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ 'assets/js/main.min.js' | url }}"></script>
+</body>
+</html>

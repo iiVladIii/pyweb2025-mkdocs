@@ -3,3 +3,5 @@
 .code
 .venv
 site
+node_modules
+**/*.min.*
